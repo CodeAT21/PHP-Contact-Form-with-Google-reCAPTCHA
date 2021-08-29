@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+.clearfix{clear:both;}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+.form__inner h3 {
+  font-size: 40px;
+  line-height: 45px;
+  color: #07a8ff;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 0px;
+}
+.form {
+  margin: 0 auto;
+  max-width: 647px;
+  padding: 27px 37px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 10px #07a8ff82;
+}
+.form-input {
+  margin-bottom: 15px;
+}
+.form__inner label {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: #333333;
+  display: block;
+}
+.form__inner input[type="text"],
+.form__inner input[type="email"],
+.form__inner textarea {
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  color: #333;
+  padding: 12px 20px;
+  font-family: inherit;
+  text-align: left;
+  -webkit-appearance: none;
+  background: rgba(255, 154, 66, 0.02);
+  display: grid;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form__inner textarea {
+  height: 125px;
+  resize: none;
+  padding: 12px 15px;
+  background: rgba(255, 154, 66, 0.02);
+  display: grid;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.form__inner input[type="text"]:focus,
+.form__inner input[type="email"]:focus,
+.form__inner textarea:focus {
+  border: 1px solid #fd5f00;
+  background: #fff;
+}
+.btn {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 27px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #0fa8ff;
+  display: inline-block;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  margin-top: 17px;
+}
+.btn:hover {
+  background: #0374b6;
+  transition: 0.3s ease;
+}
+@media all and (max-width: 590px) {
+  .form-inner-cnt h3 {
+    font-size: 30px;
+  }
+}
+.status__msg {
+	font-size: 16px;
+  padding: 6px;
+  border: 2px dashed;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.status__msg.error{
+	color: #EA4335;
+}
+.status__msg.success{
+	color: #34A853;
+}
+
